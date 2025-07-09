@@ -1,0 +1,87 @@
+body.purple-bg {
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+  font-family: 'Crimson Text', serif;
+}
+
+.dashboard-header {
+  background: linear-gradient(90deg, #a18cd1 0%, #7c3aed 100%);
+  border-radius: 18px;
+  color: #fff;
+  border: none;
+}
+
+.purple-header {
+  background: linear-gradient(90deg, #a18cd1 0%, #7c3aed 100%);
+  border-radius: 18px 18px 0 0;
+  padding: 1rem 1.2rem;
+}
+
+.purple-text {
+  color: #7c3aed !important;
+}
+
+.btn-purple {
+  background: linear-gradient(90deg, #a18cd1 0%, #7c3aed 100%);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.08);
+}
+
+.btn-purple:hover, .btn-purple:focus {
+  background: linear-gradient(90deg, #7c3aed 0%, #a18cd1 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.15);
+}
+
+.btn-outline-purple {
+  border: 2px solid #a18cd1;
+  color: #7c3aed;
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline-purple:hover, .btn-outline-purple:focus {
+  background: #a18cd1;
+  color: #fff;
+}
+
+.add-employee-card,
+.employee-list-card {
+  border-radius: 18px;
+  border: 1px solid #e0d7f3;
+  background: #fff;
+}
+
+.sticky-lg-top {
+  position: sticky;
+  top: 30px;
+  z-index: 2;
+}
+
+.inp {
+  border: 1.5px solid #d1b3ff;
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inp:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px #e9d5ff;
+}
+
+.table-purple {
+  background: linear-gradient(90deg, #a18cd1 0%, #7c3aed 100%);
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f3e8ff;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border-color: #d1b3ff !important;
+}

@@ -1,0 +1,98 @@
+body.purple-bg {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+    font-family: 'Crimson Text', serif;
+}
+
+.sidebar {
+    background: linear-gradient(135deg, #a18cd1 0%, #7c3aed 100%);
+    min-height: 100vh;
+    border-radius: 0 24px 24px 0;
+    box-shadow: 2px 0 16px rgba(124, 58, 237, 0.08);
+    color: #fff;
+}
+
+.brand-text {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.purple-text {
+    color: #7c3aed !important;
+}
+
+.profile-image {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(124, 58, 237, 0.10);
+}
+
+.profile-initials {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #7c3aed;
+}
+
+.welcome-text {
+    font-size: 1.1rem;
+    color: #f3e8ff;
+    margin-bottom: 0.2rem;
+}
+
+.username-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn-outline-purple {
+    border: 2px solid #a18cd1;
+    color: #7c3aed;
+    background: transparent;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline-purple:hover, .btn-outline-purple:focus {
+    background: #a18cd1;
+    color: #fff;
+}
+
+.main-content {
+    background: transparent;
+}
+
+.info-card {
+    border-radius: 18px;
+    border: 1px solid #e0d7f3;
+    background: #fff;
+}
+
+.purple-header {
+    background: linear-gradient(90deg, #a18cd1 0%, #7c3aed 100%);
+    border-radius: 18px 18px 0 0;
+    padding: 1rem 1.2rem;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.info-group label {
+    font-weight: 600;
+    color: #7c3aed;
+    margin-bottom: 0.2rem;
+}
+
+.info-value {
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 1.2rem;
+    background: #f3e8ff;
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+}

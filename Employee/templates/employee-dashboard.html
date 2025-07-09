@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/employee.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+</head>
+<body class="purple-bg">
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <!-- Left Sidebar -->
+            <div class="col-lg-3 sidebar py-4 d-flex flex-column align-items-center">
+                <div class="text-center mb-4">
+                    <h3 class="brand-text purple-text">Employee Portal</h3>
+                </div>
+                <div class="profile-section text-center mb-4">
+                    <div class="profile-image mb-3">
+                        <span class="profile-initials">{{ username[0]|upper }}</span>
+                    </div>
+                    <h4 class="welcome-text">Welcome back,</h4>
+                    <h5 class="username-text purple-text">{{ username }}</h5>
+                </div>
+                <div class="sidebar-bottom mt-auto w-100 px-3">
+                    <button class="btn btn-outline-purple w-100" onclick="logout()">
+                        <i class="fas fa-sign-out-alt me-2"></i>Logout
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-9 main-content py-4 d-flex align-items-center justify-content-center">
+                <div class="card info-card shadow-lg w-100" style="max-width: 700px;">
+                    <div class="card-header purple-header">
+                        <h5 class="card-title mb-0 purple-text">Employee Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="info-group">
+                                    <label>Username</label>
+                                    <p id="username" class="info-value"></p>
+                                </div>
+                                <div class="info-group">
+                                    <label>Name</label>
+                                    <p id="name" class="info-value"></p>
+                                </div>
+                                <div class="info-group">
+                                    <label>Address</label>
+                                    <p id="address" class="info-value"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-group">
+                                    <label>Age</label>
+                                    <p id="age" class="info-value"></p>
+                                </div>
+                                <div class="info-group">
+                                    <label>Gender</label>
+                                    <p id="gender" class="info-value"></p>
+                                </div>
+                                <div class="info-group">
+                                    <label>Position</label>
+                                    <p id="position" class="info-value"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/employee.js') }}"></script>
+</body>
+</html>

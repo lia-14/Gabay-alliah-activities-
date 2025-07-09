@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Login</title>
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+        <script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+    </head>
+<body class="purple-bg d-flex justify-content-center align-items-center vh-100">
+    <div class="login-card p-4 shadow-lg rounded">
+        <h2 class="text-center mb-4 purple-text">Employee Login</h2>
+        
+        <div class="text-center mb-3">
+            <span id="message" class="text-danger d-none"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="username" class="form-label purple-text">Username</label>
+            <input type="text" class="form-control inp" id="username" placeholder="Username">
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="password" class="form-label purple-text">Password</label>
+            <input type="password" class="form-control inp" id="password" placeholder="Password">
+        </div>
+
+        <button class="btn btn-purple w-100" onclick="login()">Login</button>
+
+        <div class="text-center mt-3">
+            <span class="text-muted">Don't have an account? </span>
+            <a href="/register-page" class="purple-link fw-semibold">Register here</a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+</html>
